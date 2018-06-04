@@ -17,7 +17,6 @@ INCLUDE "engine/events/happiness_egg.asm"
 INCLUDE "engine/events/shuckle.asm"
 INCLUDE "engine/events/haircut.asm"
 
-
 SECTION "bank2", ROMX
 
 INCLUDE "engine/overworld/player_object.asm"
@@ -624,3 +623,15 @@ INCBIN "mobile/stadium/stadium2_2.bin"
 else
 INCBIN "mobile/stadium/stadium2_1.bin"
 endc
+
+SECTION "HangulFont30",ROMX[$5000],BANK[$78]
+INCBIN "hangul/font/font30.fnt"
+
+SECTION "HangulFont31",ROMX,BANK[$79]
+INCBIN "hangul/font/font31.fnt"
+
+SECTION "HangulFont32",ROMX,BANK[$7A]
+INCBIN "hangul/font/font32.fnt"
+
+SECTION "HangulOutputCode",ROMX,BANK[$7F]
+INCLUDE "hangul/code/PrintHangul.asm"

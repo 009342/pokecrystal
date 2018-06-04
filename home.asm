@@ -262,7 +262,6 @@ GetWeekday:: ; 3376
 	add 7
 	ret
 ; 3380
-
 INCLUDE "home/pokedex_flags.asm"
 INCLUDE "home/names.asm"
 INCLUDE "home/scrolling_menu.asm"
@@ -278,3 +277,4 @@ INCLUDE "home/battle.asm"
 INCLUDE "home/sprite_anims.asm"
 INCLUDE "home/audio.asm"
 INCLUDE "home/mobile.asm"
+INCLUDE "hangul/code/HBlankCopy.asm"
